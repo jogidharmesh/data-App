@@ -1,0 +1,24 @@
+<input placeholder="search" #txtFname>
+<table>
+    <caption>Table heading</caption>
+    <thead>
+      <tr>
+        <th>Comoditycode</th>
+        <th>ComodityDescription</th>
+        
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <tbody >
+          <tr *ngFor="let fldata of flightdata | searchfilter: 'comoditycode' : txtFname.value" >
+          <td>{{ fldata.comoditycode}}</td>
+          <td>{{ fldata.comoditydesc}}</td>
+        </tr>
+        </tbody>
+    </tbody>
+  </table>
+  
+  
+  

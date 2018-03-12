@@ -1,0 +1,29 @@
+<table>
+  <caption>Table heading</caption>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Flight</th>
+      <th>Transaction</th>
+      <th>Partner</th>
+      <th>Activity</th>
+      <th>Miles</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <tbody >
+        <tr *ngFor="let fldata of flightdata">
+        <td>{{ fldata.Type}}</td>
+        <td>{{ fldata.Flight}}</td>
+        <td>{{ fldata.Transaction}}</td>
+        <td>{{ fldata.Partner}}</td>
+        <td>{{ fldata.Activity}}</td>
+        <td>{{ fldata.Miles}}</td>
+      </tr>
+      </tbody>
+  </tbody>
+</table>
+
+
