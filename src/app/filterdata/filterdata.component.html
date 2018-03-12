@@ -12,7 +12,8 @@
     <tbody>
       <tr>
         <tbody >
-          <tr *ngFor="let fldata of flightdata | searchfilter: 'comoditycode' : txtFname.value" >
+          <tr *ngFor="let fldata of flightdata"  >
+          <!-- <tr *ngFor="let fldata of flightdata | searchfilter: 'fldata' : txtFname.value" > -->
           <td>{{ fldata.comoditycode}}</td>
           <td>{{ fldata.comoditydesc}}</td>
         </tr>

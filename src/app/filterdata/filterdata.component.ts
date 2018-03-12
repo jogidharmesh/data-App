@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchPipe} from './search.pipe'
+
 
 @Component({
   selector: 'app-filterdata',
